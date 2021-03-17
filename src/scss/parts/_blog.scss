@@ -100,10 +100,15 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .blog {
+    &__bg-white {
+      padding-bottom: 0;
+    }
     &__overflow {
-      left: 10%;
+      position: static;
+      width: 1320px;
+      margin: 0 auto;
     }
   }
 }
