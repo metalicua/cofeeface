@@ -1,0 +1,113 @@
+@media(min-width: 320px) {
+    .use {
+        text-align: center;
+        &__imgbg{
+            background: url('../img/htu-bg.png') 50% 100% no-repeat;
+            background-size: 100%;  
+        }
+        &__gradient{
+            background: $how-to-use-gradient;
+
+            span {
+                display: block;
+                padding: 64px  0 360px;
+                margin: 0 auto;
+                width: 75%;
+                font-size: $font-size-big-mob;
+                font-weight: 200;
+                line-height: 48px;
+                }
+        }
+        &__box{
+            color: $color-black-base;
+            background-color: $color-htu-bg;
+        }
+        &__title {
+            padding: 57px 0 32px;
+            background: url('../img/text-bg.png') 50% 50% no-repeat;
+            background-size: 120%; 
+        }
+
+        &__discr{
+            padding-bottom: 57px;
+        }
+
+        &__item{
+            margin-bottom: 75px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .elem{
+                display: inline-block;
+                padding: 23px 26px;
+                background-color: $color-white-base;
+                border: 1px solid $color-brandbook;
+                border-radius: 45px;
+
+                &__discription{
+                    padding-top: 16px;;
+                }
+            }
+           
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    .use{
+
+        &__title{
+            background-size: 90%;
+        }
+    }
+}
+@media(min-width: 768px) {
+    .use{
+
+        &__title{
+            background-size: 50%;
+        }
+        &__discr{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 57px;
+        }
+        &__item{
+            margin-bottom: 0;
+        }
+    }
+}
+@media(min-width: 992px) {
+    .use{
+        color: $color-white-base;
+
+        &__title{
+            padding: 130px 0 50px;
+            background-size: 65%;
+        }
+
+        &__gradient{
+            background: no-repeat;
+
+            span {
+                display: block;
+                padding: 280px 0 240px;
+                margin: 0 auto;
+                width: 30%;
+                font-size: $font-size-big;
+                font-weight: 200;
+                line-height: 72px;
+            }
+        }
+        &__discr{
+            padding-bottom: 128px;
+        }
+
+        .elem{
+            padding: 42px 45px;
+            border-radius: 70px;
+        }
+    }
+
+}

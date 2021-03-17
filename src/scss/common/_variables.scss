@@ -1,0 +1,48 @@
+// Font
+$font-default: 'Poppins', sans-serif;
+
+// Font size
+
+$basic-size: 16px;
+$small-mob-size: 10px;
+$basic-small-size: 12px;
+$medium-size: 14px;
+$font-size-h1: 35px;
+$font-size-h1-mob: 28px;
+$font-small-discr: 18px;
+$font-norm-discr: 20px;
+$font-big-discr: 22px;
+$font-size-h2: 40px;
+$font-size-h2-mob: 30px;
+$font-size-price: 30px;
+$font-size-del-price: 16px;
+$font-size-big: 60px;
+$font-size-big-mob: 40px;
+
+// colors
+
+$color-black-base: #000;
+$color-white-base: #fff;
+$main-gradient: linear-gradient(
+  101.72deg,
+  rgba(250, 175, 152, 0.48) 5%,
+  rgba(244, 222, 214, 1) 29%,
+  rgba(248, 234, 229, 1) 89%,
+  rgba(255, 255, 255, 0) 100%
+);
+$mob-gradient: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
+$how-to-use-gradient:  linear-gradient(170.22deg, #FEF6F3 14.37%, rgba(254, 246, 243, 0) 104.42%);
+$subscribe-gradient: linear-gradient(76.3deg, rgba(252, 209, 194, 0.48) -41.01%, rgba(252, 209, 194, 0.284083) 45.83%, rgba(255, 255, 255, 0) 106.87%);
+$color-white-transparent: rgba(255, 255, 255, 0.8);
+$color-hover: #8a5137;
+$color-brandbook: #8a5137;
+$color-gray: #CBCBCB;
+$color-htu-bg: rgba(252, 209, 194, 0.2);
+
+// Animation
+
+$transition-base: 0.3s ease;
+
+// Position
+
+$position-center: translate(-50%, -50%);

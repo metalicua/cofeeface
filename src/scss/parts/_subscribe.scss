@@ -1,0 +1,81 @@
+@media (min-width:320px) {
+    .subscribe {
+        background: $subscribe-gradient;
+        text-align: center;
+
+        
+
+        &__box {
+            background: url('../img/subscribe.png') 100% 100% no-repeat;
+            background-size: 110%;
+        }
+
+        &__wrap{
+            padding: 57px 0 430px;
+        }
+
+        &__title{
+            padding-bottom: 20px;
+        }
+
+        &__discr{
+            font-weight: 300;
+            line-height: 27px;
+        }
+
+        &__btn{
+            color: $color-white-base;
+
+            &:hover{
+                color: $color-black-base
+            }
+        }
+        
+    }
+}
+
+@media (min-width:576px) {
+    .subscribe {
+       
+        &__box {
+            background-size: 70%;
+        }
+
+        
+        &__wrap{
+            padding: 57px 0 500px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .subscribe {
+       
+        &__box {
+            background-size: 60%;
+        }
+    }
+}
+@media (min-width:992px) {
+    .subscribe {
+        &__wrap{
+            width: 50%;
+            padding: 105px 0 135px;
+        }
+       
+        &__box {
+            background-size: 37%;
+        }
+
+        &__discr{
+            font-size: $font-big-discr;
+            line-height: 38px;
+        }
+        &__btn{
+            font-family: $font-default;
+            font-size: $basic-size;
+            padding: 22px 62px;
+            width: 205px;
+        }
+    }
+}

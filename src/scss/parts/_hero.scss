@@ -1,0 +1,81 @@
+@media (min-width: 320px) {
+    .hero{
+        background: $main-gradient;
+        &__bg{
+            background-color: $color-white-transparent;
+            background-image: url('../img/hero-bg.png');           
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &__wrap--mob {
+            background: $mob-gradient;
+        }
+
+        &__box{
+            padding: 260px 0 80px;
+            width:100%;
+            text-align: center;
+        }
+        &__title{
+            padding-bottom: 10px;
+        }
+        &__discr{
+            padding-bottom: 30px;
+           font-weight: 300;
+        }
+    }
+}
+@media(min-width: 576px){
+    .hero{
+        &__title{
+            padding: 0 50px 10px;
+        }
+        &__discr{
+            padding: 0 50px 30px;
+        }
+
+    }
+}
+@media(min-width:768px)  and (max-width:992px){
+    .hero{
+        &__btn{
+            width: 40%;
+        }
+    }
+}
+
+@media(min-width: 992px){
+    .hero{
+    
+        &__bg{
+            background-position: left;
+            background-size: initial;
+        }
+
+        &__box{
+            padding: 180px 0 325px;
+            width: 40%;
+            margin-left: auto;
+        }
+    
+        &__title{
+            padding: 0 0 13px;
+        }
+    
+        &__discr{
+            padding: 0 35px 35px 35px;
+            font-size: $font-norm-discr;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .hero{
+        &__wrap--mob{
+            background: none;
+        }
+    }
+}

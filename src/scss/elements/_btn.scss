@@ -1,0 +1,43 @@
+@media(min-width: 320px) {
+    .btn {
+        width: 100%;
+        padding: 21px 0;
+        background-color: $color-black-base;
+        border: 1px solid $color-black-base;
+        text-align: center;
+        transition: $transition-base;
+        
+        a{
+            font-size: $basic-size;
+            color: $color-white-base;
+        }
+    
+        &:hover {
+            background-color: $color-white-base;
+    
+            a{
+                color: $color-black-base;
+            }
+        }
+    }
+}
+
+@media(min-width:576px) {
+    .btn{
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
+@media(min-width:768px) {
+    .btn{
+        margin: 0 auto;
+        width: 40%;
+    }
+}
+@media(min-width:768px) {
+    .btn{
+        margin: 0 auto;
+        width: 60%;
+    }
+}

@@ -1,0 +1,97 @@
+@media (min-width: 320px) {
+    .footer {
+        background-color: $color-black-base;
+        font-size: $basic-small-size;
+        font-weight: 300;
+        color: $color-white-base;
+
+        &__wrap{
+            background: url('../img/footer-bg.png') 0 100% no-repeat;
+        }
+
+        &__box{
+            display: flex;
+            padding: 30px 0;
+        }
+
+        &__logo{
+            padding-bottom: 28px;
+        }
+
+        &__link{
+            font-size: $medium-size;
+            line-height: 36px;
+            color: $color-white-base;
+            transition: $transition-base;
+
+            &:hover{
+                color: $color-hover;
+            }
+        }
+
+        &__social{
+           margin-left: auto;
+            ul {
+                display: flex;
+            }
+        }
+
+        &__cards{
+            ul {
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $color-white-base;
+            }
+           
+        }
+
+        &__copyright{
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .social{
+
+        &__link{
+            margin-right: 28px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .footer {
+
+        &__info {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__cards{
+            ul {
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: flex-end;
+                border-bottom: 1px solid $color-white-base;
+            }
+           
+        }
+    }
+
+    .cards{
+
+        &__link{
+            margin-right: 16px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

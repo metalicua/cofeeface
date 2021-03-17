@@ -1,0 +1,30 @@
+@media (min-width: 320px){
+    h1,h2,h3{
+        margin: 0;
+    }
+    h1  {
+
+        font-size: $font-size-h1-mob;
+        line-height: 40px;
+        font-weight: 300;
+    }
+    h2{ 
+        font-size: $font-size-h2-mob;
+        line-height: 39px;
+        font-weight: 200;
+    }
+}
+
+@media(min-width: 768px){
+    h1 {
+        font-size: $font-size-h1;
+        line-height: 49px;
+    }
+}
+
+@media(min-width: 992px){
+    h2{
+        font-size: $font-size-h2;
+        line-height: 52px;
+    }
+}

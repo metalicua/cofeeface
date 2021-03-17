@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofeeface</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <svg width="0" height="0" class="sprite">
+        <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 19" id="logo">
+         
+            <path d="M8.74 14.73l1 2.16-.25.1a5.82 5.82 0 01-3.45 1.14 6.045 6.045 0 010-12.09 5.9 5.9 0 013.44 1.09l.25.12-1 2.09-.34-.24a3.56 3.56 0 00-2.35-.83 3.8 3.8 0 100 7.6 3.89 3.89 0 002.4-.87l.3-.27zm21.1-2.6a5.89 5.89 0 11-5.87-6 5.95 5.95 0 015.87 6zm-2.13 0a3.75 3.75 0 10-3.74 3.84 3.79 3.79 0 003.74-3.84zm52.72.07c.012.36-.022.719-.1 1.07h-9.46a3.73 3.73 0 003.59 2.82 3.37 3.37 0 002-.63h3a5.82 5.82 0 01-5 2.84 6.11 6.11 0 116-6.1h-.03zm-9.56-1.09h7.23a3.82 3.82 0 00-3.64-2.81 3.76 3.76 0 00-3.59 2.81zm29.52 1.09c.012.36-.022.719-.1 1.07h-9.46a3.73 3.73 0 003.59 2.82 3.37 3.37 0 002-.63h3a5.81 5.81 0 01-5.05 2.84 6.11 6.11 0 116-6.1h.02zm-9.56-1.09h7.21A3.82 3.82 0 0094.4 8.3a3.76 3.76 0 00-3.57 2.81zm45.21-5.06v12.16h-2.21v-1.36a5.6 5.6 0 01-3.69 1.36 6.003 6.003 0 01-6-6 6 6 0 016-6 5.6 5.6 0 013.69 1.36V6.05h2.21zm-2.21 6.65v-1a3.81 3.81 0 100 1zm18.9 2.08l1 2.16-.24.1a5.85 5.85 0 01-3.45 1.14 6.043 6.043 0 01-4.274-10.32 6.043 6.043 0 014.274-1.77 5.93 5.93 0 013.45 1.09l.24.12-1 2.09-.34-.24a3.541 3.541 0 00-2.33-.83 3.8 3.8 0 000 7.6 3.89 3.89 0 002.4-.87l.27-.27zm20.91-2.64c.012.36-.022.719-.1 1.07h-9.5a3.73 3.73 0 003.59 2.82 3.37 3.37 0 002-.63h3a5.826 5.826 0 01-5.05 2.84 6.11 6.11 0 116-6.1h.06zm-9.6-1.09h7.23a3.817 3.817 0 00-3.64-2.81 3.756 3.756 0 00-3.59 2.81zM41.14 8.2v10h-2.1V5.99a6 6 0 016.17-6v2.29a3.8 3.8 0 00-4 3.74l-.07 2.18z"></path>
+            <path d="M45.5 9.09h-8.36v2.03h8.36V9.09zm11.06-.89v10h-2.14V5.99a6 6 0 016.16-6v2.29a3.8 3.8 0 00-4 3.74l-.02 2.18z"></path>
+            <path d="M60.91 9.09h-8.36v2.03h8.36V9.09zm51.27-.86v10h-2.14V6.02a5.996 5.996 0 011.814-4.3A5.992 5.992 0 01116.2.02V2.3a3.802 3.802 0 00-4 3.74l-.02 2.19z"></path>
+            <path d="M116.54 9.12h-8.36v2.03h8.36V9.12zm59.59-7.34v.39h-1v2.56h-.42V2.17h-1v-.39h2.42zm3.41.01v2.93h-.4v-2l-.91 2-.88-2v2h-.4V1.79h.48l.8 1.9.84-1.9h.47z"></path>
+          
+        </symbol>
+        <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="serch">
+          <circle cx="5.636" cy="5.636" r="4.986" stroke-width="1.3"></circle>
+          <path d="M9.394 9.394L15.5 15.5"  stroke-width="1.3"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" id="bag">
+          <path d="M15.933 5.5H2.067L1 19.5h16l-1.067-14z"  stroke-linejoin="round"></path>
+          <path d="M5.5 8.5V4c0-1 .7-3 3.5-3 1 0 3 .6 3 3v4.5" ></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="star">
+            <path d="M6.5 0l1.689 4.176 4.493.315-3.45 2.897 1.089 4.37L6.5 9.374 2.68 11.76l1.088-4.371L.318 4.49l4.493-.315L6.5 0z"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="watch">
+            <g clip-path="url(#clip0)" fill="#8A5137">
+              <path d="M28.566 37.806v-4.959c0-4.1-2.319-7.871-5.945-9.734a10.95 10.95 0 005.475-6.563.615.615 0 00-1.177-.356 9.72 9.72 0 01-5.231 6.007l-.77.354a.615.615 0 000 1.116l.77.355a9.74 9.74 0 015.649 8.821v4.812h-1.885v-1.928a.614.614 0 10-1.229 0v1.928H12.247v-4.812a6.618 6.618 0 013.838-5.994l2.15-.99 2.15.99a6.617 6.617 0 013.838 5.994v.264a.614.614 0 101.23 0v-.264a7.85 7.85 0 00-4.553-7.11l-2.408-1.109a.613.613 0 00-.514 0l-2.408 1.11a7.85 7.85 0 00-4.552 7.109v4.812H9.133v-4.812a9.74 9.74 0 015.65-8.821l.768-.355a.614.614 0 000-1.116l-.769-.354a9.658 9.658 0 01-5.376-6.54.615.615 0 00-1.194.29 10.874 10.874 0 005.637 7.162 10.976 10.976 0 00-5.945 9.734v4.926a1.741 1.741 0 00-1.125 1.625v.862c0 .96.78 1.74 1.74 1.74h19.35c.96 0 1.74-.78 1.74-1.74v-.86c0-.712-.43-1.324-1.043-1.593zm-.186 2.454a.51.51 0 01-.51.51H8.518a.511.511 0 01-.511-.51v-.86c0-.282.23-.511.51-.511H27.87a.51.51 0 01.51.51v.862z"></path>
+              <path d="M7.904 8.453v4.734a.614.614 0 101.23 0v-4.62h1.884v4.813a7.85 7.85 0 004.552 7.109l2.408 1.109a.613.613 0 00.514 0l2.407-1.109a7.872 7.872 0 004.139-4.605.615.615 0 00-1.164-.395 6.637 6.637 0 01-3.489 3.884l-2.15.99-2.15-.99a6.617 6.617 0 01-3.839-5.994V8.567h6.617a.615.615 0 000-1.229H8.52a.511.511 0 01-.511-.51v-.862a.51.51 0 01.51-.51h10.649a.614.614 0 100-1.23H8.519c-.96 0-1.74.78-1.74 1.74v.862a1.74 1.74 0 001.125 1.625z"></path>
+              <path d="M34.889 5.092a.614.614 0 10-1.173.368 6.048 6.048 0 01-5.765 7.85c-3.33 0-6.04-2.71-6.04-6.04 0-3.331 2.71-6.04 6.04-6.04 1.78 0 3.463.78 4.615 2.143a.615.615 0 00.938-.793A7.26 7.26 0 0027.951 0c-4.009 0-7.27 3.261-7.27 7.27 0 4.008 3.261 7.27 7.27 7.27 4.009 0 7.27-3.261 7.27-7.27 0-.742-.112-1.475-.332-2.178z"></path>
+              <path d="M27.951 3.318a.615.615 0 00-.614.615v3.219c0 .24.093.466.263.636l2.276 2.276a.612.612 0 00.87 0 .614.614 0 000-.869l-2.18-2.18V3.933a.614.614 0 00-.615-.615z"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path fill="#fff" d="M0 0h42v42H0z"></path>
+              </clipPath>
+            </defs>
+          </symbol>
+          <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" id="face-washing">
+            <path d="M35.366 4.804l1.723.942.942 1.723a.734.734 0 001.289 0l.942-1.723 1.722-.942a.734.734 0 000-1.289l-1.722-.942L39.32.851a.735.735 0 00-1.289 0l-.942 1.722-1.723.942a.734.734 0 000 1.289zm2.616-1.045a.735.735 0 00.292-.292l.401-.733.401.733a.735.735 0 00.292.292l.733.4-.733.402a.734.734 0 00-.292.292l-.4.733-.402-.733a.734.734 0 00-.292-.292l-.733-.401.733-.401zM.813 18.023l1.722.942.942 1.723a.735.735 0 001.289 0l.942-1.723 1.722-.942a.735.735 0 000-1.289l-1.722-.942-.942-1.723a.735.735 0 00-1.289 0l-.942 1.723-1.722.942a.735.735 0 000 1.289zm2.616-1.046a.735.735 0 00.292-.291l.4-.734.401.734a.735.735 0 00.292.291l.734.401-.734.401a.733.733 0 00-.292.292l-.4.734-.401-.734a.733.733 0 00-.292-.292l-.734-.4.734-.402zm41.028 26.499l-4.016-8.267-.886-2.66-1.394.464.901 2.705c.01.03.023.06.037.09l3.963 8.158v.565h1.47v-.734a.734.734 0 00-.075-.321z" fill="#8A5137"></path>
+            <path d="M36.439 36.728a.734.734 0 00-.358-.427l-3-1.577-3.559-4.967a1.1 1.1 0 011.02.005l2.504 1.32a.734.734 0 001.029-.91l-3.352-8.785a1.105 1.105 0 01.342-1.372l4.445 5.946.01.015a4.756 4.756 0 01.816 1.558l1.336 4.01 1.393-.464-1.333-4.002a6.216 6.216 0 00-1.051-2.003l-4.787-6.404a.734.734 0 00-.805-.262l-.132.04a2.573 2.573 0 00-1.6 3.478l2.65 6.947-.78-.412a2.567 2.567 0 00-2.976.417l-.23.22a.734.734 0 00-.09.959l4.057 5.663c.067.093.154.17.255.223l2.888 1.517 2.056 6.45v.62h1.47v-.734a.734.734 0 00-.035-.223l-2.183-6.846zm-23.427-1.007l4.057-5.663a.734.734 0 00-.09-.959l-.23-.22a2.566 2.566 0 00-2.976-.416l-.78.411 2.65-6.947a2.572 2.572 0 00-1.6-3.477l-.132-.041a.734.734 0 00-.805.262l-4.787 6.404a6.22 6.22 0 00-1.05 2.003l-2.71 8.13L.542 43.49a.734.734 0 00-.073.32v.721h1.469v-.552l3.964-8.172a.74.74 0 00.036-.089l2.726-8.184a4.757 4.757 0 01.826-1.573l4.445-5.946a1.105 1.105 0 01.342 1.372l-3.352 8.785a.734.734 0 001.03.91l2.503-1.32a1.101 1.101 0 011.02-.005l-3.559 4.967-3 1.577c-.17.09-.3.243-.358.427l-2.183 6.846a.735.735 0 00-.034.223v.734h1.468v-.62l2.057-6.45 2.888-1.517a.734.734 0 00.255-.223z" fill="#8A5137"></path>
+            <path d="M26.933 37.382a.735.735 0 00.564.526l6.609 1.322.288-1.44-6.165-1.234-.985-3.579a11.8 11.8 0 00.106-.086c.336.08.68.121 1.025.12v-1.468c-1.647 0-2.938-1.391-2.938-3.167a3.216 3.216 0 01.93-2.285.735.735 0 00.074-.948 3.24 3.24 0 01-.611-1.91c0-1.266.716-2.408 1.826-2.91a.735.735 0 00.282-1.113 1.469 1.469 0 011.945-2.134.736.736 0 00.779-.002 2.9 2.9 0 011.549-.449c1.665 0 3.02 1.42 3.02 3.167a3.278 3.278 0 01-.42 1.612l1.278.723a4.761 4.761 0 00-.174-4.95 7.673 7.673 0 00-2.143-10.02l-.214-.155A19.051 19.051 0 0032.032 6c-.136-1.512-1.164-2.895-2.93-3.926C27.325 1.04 24.981.47 22.5.47s-4.826.57-6.601 1.605c-1.767 1.03-2.795 2.414-2.93 3.926-.522.307-1.031.642-1.527 1.002l-.214.156A7.613 7.613 0 009.02 9.66l1.287.709a6.154 6.154 0 011.785-2.024l.214-.156a17.333 17.333 0 0120.388 0l.214.156a6.203 6.203 0 011.944 7.7 4.385 4.385 0 00-2.047-.85c-.593-1.836-1.56-3.315-2.882-4.4-1.508-1.239-3.49-1.973-5.89-2.184l-.129 1.463c3.798.334 6.217 2.032 7.37 5.183a4.38 4.38 0 00-1.019.361 2.94 2.94 0 00-3.891 3.753 4.74 4.74 0 00-1.43 6.13 4.69 4.69 0 00-.965 2.874c0 1.603.736 2.992 1.88 3.821-1.183.856-2.347 1.319-3.349 1.319-1.002 0-2.166-.463-3.349-1.319 1.144-.83 1.88-2.218 1.88-3.821a4.689 4.689 0 00-.965-2.873 4.74 4.74 0 00-1.43-6.13 2.938 2.938 0 00-3.891-3.754 4.377 4.377 0 00-1.018-.36c.573-1.554 1.468-2.77 2.668-3.623 1.513-1.075 3.567-1.62 6.105-1.62v-1.47c-2.85 0-5.19.638-6.956 1.893-1.564 1.111-2.689 2.71-3.35 4.758a4.387 4.387 0 00-2.046.849 6.208 6.208 0 01-.379-4.363l-1.414-.397a7.677 7.677 0 00.73 5.891 4.76 4.76 0 00-.174 4.95l1.279-.723a3.277 3.277 0 01-.42-1.612c0-1.746 1.354-3.167 3.02-3.167a2.9 2.9 0 011.548.449.735.735 0 00.779.002 1.468 1.468 0 011.945 2.134.734.734 0 00.282 1.113c1.11.502 1.826 1.644 1.826 2.91a3.24 3.24 0 01-.611 1.91.734.734 0 00.074.948 3.217 3.217 0 01.93 2.285c0 1.776-1.29 3.167-2.938 3.167v1.469c.345 0 .69-.04 1.025-.121l.106.086-.985 3.58-6.165 1.232.288 1.44 6.61-1.321a.734.734 0 00.563-.526l.963-3.5c1.192.726 2.37 1.102 3.47 1.102s2.277-.376 3.47-1.102l.963 3.5zM22.5 3.406a18.695 18.695 0 00-7.71 1.649c1.038-1.783 4.15-3.117 7.71-3.117 3.56 0 6.672 1.334 7.71 3.117a18.695 18.695 0 00-7.71-1.649zm4.406 36.054v-.07h-1.469v.07a2.38 2.38 0 001.995 2.354l7.432 1.239.241-1.45-7.432-1.238a.915.915 0 01-.767-.905zm-8.812 0a.916.916 0 01-.767.905l-7.432 1.239.241 1.449 7.432-1.24a2.38 2.38 0 001.994-2.353v-.07h-1.468v.07z" fill="#8A5137"></path>
+          </symbol>
+          <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="hand-washing">
+            <g clip-path="url(#clip0)" fill="#8A5137">
+              <path d="M6.303 31.027l2.414 1.828.06.048 1.56 1.178 6.191 4.686a3.308 3.308 0 001.991.663h6.943a.701.701 0 000-1.403H18.52a1.925 1.925 0 01-1.923-1.923c0-1.06.863-1.922 1.923-1.922h9.664a.701.701 0 000-1.403h-3.382v-4.117a.701.701 0 10-1.403 0v4.117H18.52l-.07.002V12.2h4.95v13.473a.701.701 0 001.402 0v-13.54a2.42 2.42 0 001.853-2.348V3.078A3.082 3.082 0 0023.576 0H5.34a.701.701 0 100 1.403h18.236c.924 0 1.675.751 1.675 1.675v3.976h-9.037V5.078a.701.701 0 00-.702-.7h-2.528a.701.701 0 100 1.402h1.827v4.005a2.42 2.42 0 002.235 2.408v15.876l-.498-.377a2.347 2.347 0 00-3.693 1.327l-.728-.55a2.781 2.781 0 00-4.43 1.855l-.548-.415a2.958 2.958 0 00-4.74 2.294c-.017.82.295 1.588.878 2.165l4.127 4.078a.702.702 0 00.986-.997L4.273 33.37a1.54 1.54 0 01-.461-1.138 1.555 1.555 0 012.491-1.206zm9.91-21.242V8.457h9.038v1.328c0 .558-.454 1.012-1.013 1.012h-7.011a1.014 1.014 0 01-1.013-1.012zm-1.83 19.21a.943.943 0 011.319-.184l1.344 1.016v2.36l-2.49-1.882a.942.942 0 01-.173-1.31zm-5.028.862a1.377 1.377 0 011.927-.268l2.417 1.826.022.018 2.735 2.066a3.32 3.32 0 00-1.26 2.496l-3.99-3.015-1.61-1.22a1.376 1.376 0 01-.24-1.903zM35.709 46.76l-3.536-2.947a.7.7 0 00-.449-.163H15.9a2.96 2.96 0 01-2.093-.86l-3.277-3.237a.701.701 0 10-.986.997l3.277 3.238a4.354 4.354 0 003.079 1.264h15.57l3.34 2.785a.698.698 0 00.988-.09.7.7 0 00-.09-.987z"></path>
+              <path d="M9.995 4.377H5.34a.701.701 0 100 1.403h4.655a.701.701 0 100-1.403zM22.081 19.47v-4.71a.701.701 0 00-1.402 0v4.71a.701.701 0 001.402 0zm-2.374 8.45v1.484a.701.701 0 101.402 0V27.92a.701.701 0 10-1.402 0zm8.706-9.426c.547.196 2.003.718 3.12.718.257 0 .496-.028.703-.093a2.796 2.796 0 001.815-3.508 2.796 2.796 0 00-3.507-1.816c-.273.087-1.102.35-2.761 2.718-.236.336-.3.754-.175 1.146.124.392.417.696.805.835zm2.555-3.362a1.392 1.392 0 011.656 1.964c-.17.33-.46.573-.813.686-.293.093-1.202-.002-2.807-.567.985-1.388 1.671-1.99 1.964-2.083zm.152 6.78c-.212-.013-.858-.051-2.546 1.084-.29.195-.469.507-.49.856-.021.349.119.68.384.908 1.54 1.33 2.186 1.368 2.398 1.381a2.12 2.12 0 001.712-3.52 2.104 2.104 0 00-1.458-.709zm.587 2.158a.716.716 0 01-.756.671c-.1-.01-.507-.175-1.27-.793.832-.523 1.256-.636 1.355-.636a.71.71 0 01.493.24.71.71 0 01.178.518zM9.259 17.53a2.523 2.523 0 00-.026 1.944 2.53 2.53 0 001.357 1.393c.127.054.39.168.984.168.524 0 1.303-.088 2.47-.381.376-.095.68-.354.834-.71a1.226 1.226 0 00-.06-1.094c-1.261-2.239-1.984-2.55-2.222-2.652a2.523 2.523 0 00-1.944-.025 2.524 2.524 0 00-1.393 1.357zm1.288.553a1.136 1.136 0 011.495-.597c.187.08.693.564 1.444 1.86-1.457.347-2.156.312-2.342.232a1.131 1.131 0 01-.608-.624 1.13 1.13 0 01.011-.87zm34.765 21.846l-5.77-4.353a13.95 13.95 0 00-8.35-2.797h-.02a.701.701 0 000 1.402h.02c2.691 0 5.357.893 7.506 2.515l5.77 4.353a.698.698 0 00.981-.138.701.701 0 00-.137-.982z"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path fill="#fff" d="M0 0h48v48H0z"></path>
+              </clipPath>
+            </defs>
+          </symbol>
+          <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="twitter">
+            
+              <path d="M18.881 6.989a8.595 8.595 0 002.158-2.235 8.992 8.992 0 01-2.48.679 4.282 4.282 0 001.894-2.38 8.614 8.614 0 01-2.73 1.043 4.304 4.304 0 00-7.447 2.943c0 .342.029.67.1.982-3.58-.175-6.747-1.89-8.875-4.503a4.342 4.342 0 00-.59 2.176 4.31 4.31 0 001.913 3.578 4.255 4.255 0 01-1.945-.53v.047a4.325 4.325 0 003.45 4.23 4.262 4.262 0 01-1.13.142c-.275 0-.553-.016-.814-.073.557 1.704 2.141 2.958 4.022 2.999a8.654 8.654 0 01-5.338 1.836 8.12 8.12 0 01-1.03-.059 12.124 12.124 0 006.605 1.932c7.597 0 12.549-6.338 12.237-12.807z" ></path>
+          </symbol>
+          <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="instagram">
+            
+              <path d="M12.437.765H4.641A4.607 4.607 0 00.039 5.367v7.796a4.607 4.607 0 004.602 4.602h7.796a4.607 4.607 0 004.602-4.602V5.367A4.607 4.607 0 0012.437.765zM8.54 13.913a4.654 4.654 0 01-4.648-4.648A4.654 4.654 0 018.54 4.617a4.653 4.653 0 014.648 4.648 4.653 4.653 0 01-4.648 4.648zm4.76-8.2a1.375 1.375 0 01-1.374-1.374 1.375 1.375 0 012.747 0c0 .758-.616 1.374-1.373 1.374z"></path>
+              <path d="M8.539 5.613a3.656 3.656 0 00-3.652 3.652 3.656 3.656 0 003.652 3.652 3.656 3.656 0 003.652-3.652 3.656 3.656 0 00-3.652-3.652zm4.76-1.651a.377.377 0 100 .755.377.377 0 000-.755z"></path>
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="facebook">
+            
+              <path d="M12.788.77L10.583.765c-2.476 0-4.077 1.642-4.077 4.184v1.929H4.29a.347.347 0 00-.347.346v2.795c0 .192.155.347.347.347h2.216v7.052c0 .192.155.347.347.347h2.892a.347.347 0 00.346-.347v-7.052h2.592a.347.347 0 00.347-.347V7.225a.347.347 0 00-.346-.346H10.09V5.243c0-.786.188-1.185 1.212-1.185h1.485a.347.347 0 00.346-.347V1.116a.347.347 0 00-.346-.347z"></path>
+           
+          </symbol>
+      </svg>
+    <section class="info">
+        <div class="container">
+            <div class="info__content">
+                Free shipping over $100
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__bg">
+            <div class="container">
+                <div class="header__box">
+                    <div class="header__menu--mob">
+                        <a href="#" class="header__linkMenu">Menu</a>
+                    </div>
+                    <div class="header__logo">
+                        <a href="#" class="header__link">
+                            <svg class="logo">
+                                <use xlink:href="#logo"></use>
+                              </svg>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <a href="#" class="nav__link nav__link--active">
+                                <li>
+                                Home
+                                </li>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <li>
+                                    Shop
+                                </li>
+                            </a>
+                            <a href="#" class="nav__link ">
+                                <li>
+                                    About
+                                </li>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <li>
+                                    What is Coffeeface
+                                </li>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <li>
+                                    Contact
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+                    <div class="header__icons">
+                        <a href="#">
+                            <svg class="icon header-icon serch">
+                                <use xlink:href="#serch">
+                            </use></svg>
+                        </a>
+                        <a href="#" class="point">
+                            <div class="point__box">3</div>
+                            <svg class="header-icon  icon ">
+                                <use xlink:href="#bag">
+                            </use></svg>
+                        </a>
+                    </div>
+                </div>             
+            </div>           
+        </div>   
+    </header>
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__wrap--mob">
+                <div class="container">
+                    <div class="hero__box">
+                        <div class="hero__title">
+                            <h1>A Revolution in Antibacterial, Antiviral Facial Cleaning</h1>
+                        </div>
+                        <div class="hero__discr">
+                            Manuka honey antibacterial propertiesthat help protect and seal your skin
+                        </div>
+                        <div class="hero__btn btn" >
+                            <a href="#" class="hero__link">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="img/about.png" alt="">
+                </div>
+                <div class="about__logo">
+                    <svg class="logo">
+                        <use xlink:href="#logo"></use>
+                      </svg>
+                </div>
+                <div class="about__discr">
+                    is an innovative approach to beauty. Uncomplicated. Sophisticated. Declutter your daily skincare routine.
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="shop">
+        <div class="container">
+            <div class="shop__box">
+                <div class="shop__content">
+                    <div class="shop__title">
+                        <h2>3-in-1 Pads Exfoliate. Serum. Moisturize.</h2>
+                    </div>
+                    <div class="shop__rating rating">
+                        <ul class="rating__list"> <span>Reviews</span>
+                            <a href="#" class="rating__link rating__link--active" data-rating='1'>
+                                <li>
+                                    <svg class="rating-star">
+                                        <use xlink:href="#star"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="rating__link rating__link--active" data-rating='2'>
+                                <li>
+                                    <svg class="rating-star">
+                                        <use xlink:href="#star"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="rating__link rating__link--active" data-rating='3'>
+                                <li>
+                                    <svg class="rating-star">
+                                        <use xlink:href="#star"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="rating__link rating__link--active" data-rating='4'>
+                                <li>
+                                    <svg class="rating-star">
+                                        <use xlink:href="#star"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="rating__link" data-rating='5'>
+                                <li>
+                                    <svg class="rating-star">
+                                        <use xlink:href="#star"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="shop__discr">
+                        Stabilized caffeine works hard to immediately stimulate collagen production in your skin, plus it provides a wake-you-up tightening effect.
+                    </div>
+                    <div class="shop__price">
+                        <span><del>$84.99</del></span> <span>$64.99</span>
+                    </div>
+                    <div class="shop__btn btn" >
+                        <a href="#" class="shop__link ">Shop now</a>
+                    </div>
+                </div>
+                <div class="shop__image">
+                    <img src="img/shop-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="use">
+        <div class="use__imgbg">
+            <div class="use__gradient">
+                <div class="comtainer">
+                    <span>Exfoliate. Serum. Moisturize.</span>
+                </div>
+            </div>
+        </div>
+        <div class="use__box">
+            <div class="use__title">
+                <h2>How to use the CoffeeFace</h2>
+            </div>
+            <div class="use__discr">
+                <div class="use__item">
+                    <div class="elem">
+                        <svg class="use-icon">
+                            <use xlink:href="#hand-washing"></use>
+                        </svg>
+                    </div>
+                    <div class='elem__discription'>Wash your face</div> 
+                </div>
+                <div class="use__item">
+                    <div class="elem">
+                        <svg class="use-icon">
+                            <use xlink:href="#face-washing"></use>
+                        </svg>
+                    </div>
+                    <div class='elem__discription'>Apply on the skin</div> 
+                </div>
+                <div class="use__item">
+                    <div class="elem">
+                        <svg class="use-icon">
+                            <use xlink:href="#watch"></use>
+                        </svg>
+                    </div>
+                    <div class='elem__discription'>Wait 5 minutes</div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-slider">
+        <div class="container">
+            <div class="b-slider__left-arrow">
+                <div class="left-arrow-box"></div>
+            </div>
+            <div class="b-slider__right-arrow">
+                <div class="right-arrow-box"></div>
+            </div>
+            <div class="b-slider__wrapp">
+                <div class="b-slider__box">
+                    <div class="b-slider__title">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="b-slider__avatar">
+                        <img src="img/avatar.png" alt="">
+    
+                        <div class="name">Anna K.</div>
+                    </div>
+    
+                    <div class="b-slider__discr">
+                        <p>
+                            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                        </p>
+                    </div>
+                </div>
+                <div class="b-slider__box">
+                    <div class="b-slider__title">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="b-slider__avatar">
+                        <img src="img/avatar.png" alt="">
+    
+                        <div class="name">Anna K.</div>
+                    </div>
+    
+                    <div class="b-slider__discr">
+                        <p>
+                            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                        </p>
+                    </div>
+                </div>
+                <div class="b-slider__box">
+                    <div class="b-slider__title">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="b-slider__avatar">
+                        <img src="img/avatar.png" alt="">
+    
+                        <div class="name">Anna K.</div>
+                    </div>
+    
+                    <div class="b-slider__discr">
+                        <p>
+                            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog__bg-black">
+            <div class="container">
+                <div class="blog__main-image">
+                    <img src="img/aloe.png" alt="">
+                </div>
+                <div class="blog__title">
+                    <h2>Blog</h2>
+                </div>
+            </div>
+        </div>
+        <div class="blog__bg-white">
+           <div class="blog__overflow">
+                <div class="blog__box">
+                    <div class="blog__items">
+                        <img src="img/blogimg1.png" alt="">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
+                    </div>
+                    <div class="blog__items">
+                        <img src="img/blogimg2.png" alt="">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
+                    </div>
+                    <div class="blog__items">
+                        <img src="img/blogimg3.png" alt="">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
+                    </div>
+                    </div>
+                    <img src="img/partners.png" class="partner" alt="">
+                </div>
+        
+            </div>
+        </div>
+               
+    </section>
+    <section class="subscribe">
+        <div class="subscribe__box">
+            <div class="container">
+                <div class="subscribe__wrap">
+                    <div class="subscribe__title">
+                        <h2>Subscribe to coffeeface emails</h2>
+                    </div>
+                    <div class="subscribe__discr">
+                        <p>Subscribe to our coffeeface emails and get exclusive first access to new products, free surveys, free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more information, see our privacy policy.
+                        </p>
+                    </div>
+                    <div class="subscribe__form">
+                        <form action="" class="form">
+                            <input id="subscribe" class="form-control" type="email" placeholder="Your email" name="">
+                            <button type="submit" class="subscribe__btn btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="s-slider">
+        <div class="container">
+            <div class="s-slider__title">
+                <a href="#" class="s-slider__link"><h2>@coffee_face</h2></a>
+            </div>
+            <div class="s-slider__left-arrow"></div>
+            <div class="s-slider__right-arrow"></div>
+            <div class="s-slider__box">
+                <div class="s-slider__item">
+                    <img src="img/s1.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s2.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s3.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s1.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s2.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s3.png" alt="">
+                </div>
+                <div class="s-slider__item">
+                    <img src="img/s2.png" alt="">
+                </div>
+            </div>
+            <div class="s-slider__info">
+                <span>
+                    <svg class="instagram-slider">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </span>
+                Join us on instagram for new products, great giveaways and more!
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="container">
+                <div class="footer__box">
+                    <div class="footer__info">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <svg class="logo">
+                                    <use xlink:href="#logo"></use>
+                                  </svg>
+                            </a>
+                           
+                        </div>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <a href="#" class="footer__link">
+                                    <li>Home page  </li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li>About coffeeface</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li>Coffeeface the Community</li>
+                                </a>
+                            </ul>
+                        </nav>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <a href="#" class="footer__link">
+                                    <li>Privacy Policy</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li> Shipping-Terms</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li>Contact Us</li>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__social">
+                        <ul>
+                            <a href="#" class="social__link">
+                                <li>
+                                    <svg class="social">
+                                        <use xlink:href="#facebook"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="social__link">
+                                <li>
+                                    <svg class="social">
+                                        <use xlink:href="#twitter"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                            <a href="#" class="social__link">
+                                <li>
+                                    <svg class="social">
+                                        <use xlink:href="#instagram"></use>
+                                      </svg>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__cards">
+                    <ul>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/Visa.jpg" alt="">
+                            </li>
+                        </a>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/Amex.jpg" alt="">
+                            </li>
+                        </a>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/Mastercard.jpg" alt="">
+                            </li>
+                        </a>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/JCB.jpg" alt="">
+                            </li>
+                        </a>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/Discover.jpg" alt="">
+                            </li>
+                        </a>
+                        <a href="#" class="cards__link">
+                            <li>
+                                <img src="img/DinersClub.jpg" alt="">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__copyright">
+                    <div class="left">© 2020, Coffeeface</div>
+                    <div class="right">Powered by Shopify</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

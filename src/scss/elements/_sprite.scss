@@ -1,0 +1,76 @@
+.sprite {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .logo {
+    width: 122px;
+    height: 12px;
+    fill: $color-brandbook;
+  }
+
+  .header-icon{
+    stroke: $color-black-base;
+
+    &:hover{
+      stroke: $color-hover;
+    }
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+  .serch {
+    display: block;
+  }
+
+  .rating-star{
+    width: 14px;
+    height: 14px;
+   
+  }
+  .use-icon{
+    width: 31px;
+    height: 31px;
+  }
+
+  .instagram-slider{
+    width: 13px;
+    height: 13px;
+    fill: #909090;
+  }
+
+  .social{
+    width: 17px;
+    height: 17px;
+    fill: $color-white-base;
+    transition: $transition-base;
+
+    &:hover{
+      fill: $color-hover;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 180px;
+    height: 18px;
+  }
+  .icon {
+    width: 16px;
+    height: 18px;
+  }
+  .serch {
+    display: none;
+  }
+  #bag {
+  }
+}
+
+@media(min-width: 992px) {
+  .use-icon{
+    width: 44px;
+    height: 44px;
+  }
+}

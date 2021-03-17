@@ -1,0 +1,27 @@
+// Common
+@import "../../node_modules/normalize.css/normalize.css";
+@import "common/variables";
+@import "common/typography";
+@import "common/main";
+
+// Custom
+
+//Elements
+@import "elements/sprite";
+@import "elements/navigation";
+@import "elements/btn";
+@import "elements/rating";
+@import "elements/form";
+
+// Parts
+@import "parts/info";
+@import "parts/header";
+@import "parts/hero";
+@import "parts/about";
+@import "parts/shop";
+@import "parts/use";
+@import "parts/b-slider";
+@import "parts/blog";
+@import "parts/subscribe";
+@import "parts/s-slider";
+@import "parts/footer";
