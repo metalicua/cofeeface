@@ -1,7 +1,7 @@
 @media (min-width: 320px) {
   .blog {
     padding-top: 70px;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
     &__bg-black {
       background-color: $color-black-base;
